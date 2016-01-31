@@ -5,11 +5,41 @@
  */
 package uglynumber;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Jordan-PC
  */
 public class main {
+    
+    //Acha o menor multiplo de 2, 3 e 5
+    public int menorMultiplo(int menorMultiplo2, int menorMultiplo3, int menorMultiplo5){
+                
+        if(menorMultiplo2 < menorMultiplo3 && menorMultiplo2 < menorMultiplo5)
+            return menorMultiplo2;
+        else
+            if(menorMultiplo3 < menorMultiplo5)
+                return menorMultiplo3;
+            else
+                return menorMultiplo5;
+        
+    }
+    
+    public int numerosPrimos(){
+        int menor2 = 2, menor3 = 3, menor5 = 5;
+        int menorAtual = 1;
+        List<Integer> numerosPrimos = new ArrayList<>();
+        
+        numerosPrimos.add(menorAtual);
+        
+        for(menorAtual = 2; menorAtual < 1500; menorAtual++){
+            
+        }
+        
+        
+    }
 
     /**
      * @param args the command line arguments
